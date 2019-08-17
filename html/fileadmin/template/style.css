@@ -1,0 +1,55 @@
+body {
+  background: #FEA569;
+  color: #000;
+  font-family: Verdana, 'Lucida Sans Unicode', sans-serif;
+}
+
+a:link, a:visited {
+  color: #fea569;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 2% auto;
+  background: #FFF;
+  min-height: 80%;
+}
+
+.navi {
+  border-top: 1px solid #fea569;
+  border-bottom: 1px solid #fea569;
+  margin: 1em 0;
+  padding: 0.2em 0;
+}
+
+.navi div {
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-right: 1px solid #fea569;
+}
+
+.content {
+  padding: 1.8em;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.table-striped > tbody > tr.green, .table-striped>tbody>tr:nth-of-type(odd).green {
+  background-color: #00bb88;
+}
+
+.text--right {
+  text-align: right;
+}
+
+form div {
+  margin-bottom: 1em;
+}

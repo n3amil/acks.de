@@ -1,0 +1,43 @@
+{
+    "name": "ab-softlab/since1988-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "Since 1988 Sitepackage",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "sitepackage"
+    ],
+    "homepage": "http://ab-softlab.de",
+    "authors": [
+        {
+            "name": "Anja Leichsenring",
+            "email": "aleichsenring@ab-softlab.de",
+            "role": "Developer",
+            "homepage": "http://ab-softlab.de"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "replace": {
+        "since1988-sitepackage": "self.version",
+        "typo3-ter/since1988-sitepackage": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p .Build/Web/typo3conf/ext/",
+            "[ -L .Build/Web/typo3conf/ext/since1988_sitepackage ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/since1988_sitepackage"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web"
+        }
+    }
+}
