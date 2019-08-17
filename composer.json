@@ -1,0 +1,31 @@
+{
+    "name": "maddy/acks.de",
+    "type": "project",
+    "require": {
+        "typo3/cms-belog": "8.7.24",
+        "typo3/cms-beuser": "8.7.24",
+        "typo3/cms-felogin": "8.7.24",
+        "typo3/cms-fluid-styled-content": "8.7.24",
+        "typo3/cms-form": "8.7.24",
+        "typo3/cms-func": "8.7.24",
+        "typo3/cms-impexp": "8.7.24",
+        "typo3/cms-info": "8.7.24",
+        "typo3/cms-info-pagetsconfig": "8.7.24",
+        "typo3/cms-rte-ckeditor": "8.7.24",
+        "typo3/cms-setup": "8.7.24",
+        "typo3/cms-t3editor": "8.7.24",
+        "typo3/cms-tstemplate": "8.7.24",
+        "vlucas/phpdotenv": "^3.4"
+    },
+    "authors": [
+        {
+            "name": "Anja Leichsenring",
+            "email": "aleichsenring@ab-softlab.de"
+        }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "web-dir": "html"
+        }
+    }
+}

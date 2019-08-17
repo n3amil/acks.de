@@ -3,19 +3,19 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$pbkdf2-sha256$25000$W0rNHisWwRDp.UnsWuw8nQ$fNlljOLhHl2xNp.Lo7h0sSILYbyYS3ieyXyf4kG6hcg',
-        'loginSecurityLevel' => 'rsa',
+        'installToolPassword' => '<set by dotenv>',
+        'loginSecurityLevel' => 'normal',
     ],
     'DB' => [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8',
-                'dbname' => 'db426841_698',
+                'dbname' => '<set by dotenv>',
                 'driver' => 'mysqli',
-                'host' => '127.0.0.3',
-                'password' => '$2306Maggie',
-                'port' => 3306,
-                'user' => 'db426841_698',
+                'host' => '<set by dotenv>',
+                'password' => '<set by dotenv>',
+                'port' => '<set by dotenv>',
+                'user' => '<set by dotenv>',
             ],
         ],
     ],
@@ -34,7 +34,7 @@ return [
     'FE' => [
         'debug' => false,
         'enableRecordRegistration' => false,
-        'loginSecurityLevel' => 'rsa',
+        'loginSecurityLevel' => 'normal',
     ],
     'GFX' => [
         'jpg_quality' => '80',

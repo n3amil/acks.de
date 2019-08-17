@@ -13,3 +13,8 @@
 
 # DotEnv
 .env
+
+# composer
+/vendor/
+/html/typo3/
+/var/

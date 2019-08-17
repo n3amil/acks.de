@@ -8,10 +8,9 @@ router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames:
-  - acks-site.de
-  - since1988-site.de
+  - since1988.de
 additional_fqdns: []
-mariadb_version: "10.1"
+mariadb_version: "10.2"
 nfs_mount_enabled: false
 provider: default
 use_dns_when_possible: true
