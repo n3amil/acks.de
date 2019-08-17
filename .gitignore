@@ -1,7 +1,7 @@
 # Ignore several upload and file directories.
-*/fileadmin/_temp_/
-*/fileadmin/_processed_/
-*/uploads/
+/**/_processed_/
+/**/_temp_/
+/**/uploads/
 # Ignore cache
 */typo3conf/ENABLE_INSTALL_TOOL
 /FIRST_INSTALL
@@ -9,7 +9,7 @@
 */typo3temp/
 
 #PhpStorm
-.idea
+.idea/
 
 # DotEnv
 .env
