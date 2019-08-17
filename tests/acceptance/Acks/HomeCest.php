@@ -8,7 +8,7 @@ class HomeCest
 {
     public function _before(AcceptanceTester $I)
     {
-        $I->amOnPage('https://acks.de.ddev.site/index.php?id=1');
+        $I->amOnPage('/index.php?id=1');
     }
 
     // tests

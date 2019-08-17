@@ -13,7 +13,7 @@ modules:
   config:
     WebDriver:
       host: selenium
-      url: localhost
+      url: http://web
       browser: chrome
       window_size: 1440x960
       restart: true
