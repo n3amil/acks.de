@@ -27,5 +27,8 @@
         "typo3/cms": {
             "web-dir": "html"
         }
+    },
+    "require-dev": {
+        "codeception/codeception": "^3.0"
     }
 }
