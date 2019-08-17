@@ -13,6 +13,5 @@ services:
     environment:
       - VIRTUAL_HOST=$DDEV_HOSTNAME
       - HTTP_EXPOSE=4444
-  web:
     external_links:
       - ddev-router:$DDEV_HOSTNAME
