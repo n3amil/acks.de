@@ -6,9 +6,14 @@
 
 actor: AcceptanceTester
 modules:
-    enabled:
-        - WebDriver:
-            url: https://acks.de.ddev.site
-            browser: chrome
-        - \Helper\Acceptance
-    step_decorators: ~
+  enabled:
+    - WebDriver
+    - Asserts
+    - Helper\Acceptance
+  config:
+    WebDriver:
+      host: selenium
+      url: localhost
+      browser: chrome
+      window_size: 1440x960
+      restart: true
