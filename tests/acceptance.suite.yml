@@ -10,5 +10,7 @@ modules:
         - WebDriver:
             url: https://acks.de.ddev.site
             browser: chrome
+            host: selenium
+            port: 4444
         - \Helper\Acceptance
     step_decorators: ~
