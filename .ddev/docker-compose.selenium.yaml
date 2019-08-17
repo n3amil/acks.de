@@ -1,0 +1,22 @@
+version: '3.6'
+
+services:
+  selenium:
+    container_name: ddev-${DDEV_SITENAME}-selenium
+    image: selenium/standalone-chrome:latest
+    networks:
+      default:
+        aliases:
+          - web
+    ports:
+      - 4444
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+      com.ddev.app-url: $DDEV_URL
+    environment:
+      - VIRTUAL_HOST=$DDEV_HOSTNAME
+      - HTTP_EXPOSE=4444
+  web:
+    external_links:
+      - ddev-router:$DDEV_HOSTNAME

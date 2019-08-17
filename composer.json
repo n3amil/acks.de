@@ -30,5 +30,10 @@
     },
     "require-dev": {
         "codeception/codeception": "^3.0"
+    },
+    "config": {
+        "discard-changes": true,
+        "bin-dir": "bin",
+        "sort-packages": true
     }
 }

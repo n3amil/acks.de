@@ -1,0 +1,12 @@
+default:
+  extensions:
+    "Behat\\MinkExtension":
+      goutte: null
+      base_url: 'http://web'
+      javascript_session: selenium2
+      selenium2:
+        browser: "chrome"
+        wd_host: http://selenium:4444/wd/hub
+        capabilities:
+          extra_capabilities:
+            idle-timeout: 50
